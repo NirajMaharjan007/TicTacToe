@@ -23,5 +23,5 @@
 hs_err_pid*
 
 #ignores bat files
-.cmd
-.bat
+*.cmd
+*.bat
