@@ -10,6 +10,7 @@ public class MainFrame extends JFrame {
     public MainFrame() {
         setTitle("TicTacToe");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         setLayout(new BorderLayout());
         setFocusable(true);
         setFocusableWindowState(true);

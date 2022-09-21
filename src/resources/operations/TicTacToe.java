@@ -176,27 +176,26 @@ public class TicTacToe extends JPanel implements ActionListener {
     }
 
     protected void winner_X(int a, int b, int c) {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 9; i++) {
             if (i != a && i != b && i != c) {
                 buttons[i].setEnabled(false);
+            } else {
+                buttons[i].setForeground(Color.BLACK);
+                buttons[i].setBackground(Color.GREEN);
             }
-
-        buttons[a].setBackground(Color.GREEN);
-        buttons[b].setBackground(Color.GREEN);
-        buttons[c].setBackground(Color.GREEN);
-
+        }
         title.setText("X wins");
     }
 
     protected void winner_O(int a, int b, int c) {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 9; i++) {
             if (i != a && i != b && i != c) {
                 buttons[i].setEnabled(false);
+            } else {
+                buttons[i].setForeground(Color.BLACK);
+                buttons[i].setBackground(Color.GREEN);
             }
-
-        buttons[a].setBackground(Color.GREEN);
-        buttons[b].setBackground(Color.GREEN);
-        buttons[c].setBackground(Color.GREEN);
+        }
 
         title.setText("O wins");
     }
